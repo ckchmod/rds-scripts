@@ -1,7 +1,7 @@
 %% Synchronization Test
 clear all; clc;
 t = 100; %time step duration
-c_1 = .3; %switching probability between two F_1, F_2 if rand > c_l, F1
+c_1 = .5; %switching probability between two F_1, F_2 if rand > c_l, F1
 
 %% 4 gene test case 
 % n=4; %5th node extension
@@ -134,7 +134,8 @@ for i=1:t
         step2 = bnNextState(step2,F_2,varF_1,nv_1);
         step2_dec = bin2dec(num2str(step2));
     end
-    trajec = [trajec, [step1_dec;step2_dec]]
+    trajec = [trajec, [step1_dec;step2_dec]];
 end
 
-plot(1:t+1,trajec);
+plot(1:t+1,trajec);xlabel('time steps'); ylabel('states');
+title('2-state trajectories');
