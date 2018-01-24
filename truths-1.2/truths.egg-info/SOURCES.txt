@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+truths/__init__.py
+truths/truths.py
+truths.egg-info/PKG-INFO
+truths.egg-info/SOURCES.txt
+truths.egg-info/dependency_links.txt
+truths.egg-info/requires.txt
+truths.egg-info/top_level.txt
